@@ -16,7 +16,7 @@ To use this demo, you need to specify several configuration parameters:
 1. **Databricks Cluster ID**: Find this in your Databricks cluster configurations and update it in the `dagster_demo/__init__.py` file (i.e., replace "<CLUSTER_ID>").
 2. **Databricks Host**: This is the URL of your Databricks workspace. Update it in the `dagster_demo/__init__.py` file (i.e., replace "<HOST_HTTPS_PATH>", sample format: "https://abd-123abcde-0a1b.cloud.databricks.com").
 3. **Databricks Token**: This is your personal access token for Databricks. Update it in the `dagster_demo/__init__.py` file (i.e., replace "<HOST_TOKEN>").
-4. **Databricks Schema**: This is the schema/database where you want to store the sample table for this demo, assuming you store it in the Hive Metastore. Update the schema in the `dagster_demo/pyspark_asset.py` (i.e., replace "<SCHEMA>").
+4. **Databricks Schema**: This is the schema/database where you want to store the sample table for this demo, assuming you store it in the Hive Metastore. Update the schema in the `dagster_demo/pyspark_asset.py` (i.e., replace "<DB_SCHEMA>").
 
 For more detailed instructions on how to find these parameters, refer to the Databricks documentation.
 

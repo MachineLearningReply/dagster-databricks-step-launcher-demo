@@ -25,7 +25,7 @@ def full_moon_dates_op():
 
     full_moon_dates_df = spark.read.option("header", "true").csv("dbfs:/tmp/seed_full_moon_dates.csv")
     full_moon_dates_df = full_moon_dates_df.withColumn("full_moon_date", col("full_moon_date").cast("date"))
-    full_moon_dates_df.write.format("delta").mode("overwrite").saveAsTable("hive_metastore.<SCHEMA>.raw_full_moon_dates")
+    full_moon_dates_df.write.format("delta").mode("overwrite").saveAsTable("hive_metastore.<DB_SCHEMA>.raw_full_moon_dates")
 
 @asset(required_resource_keys={"databricks_step_launcher"})
 def full_moon_dates_delta_table():
