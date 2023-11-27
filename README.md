@@ -11,7 +11,7 @@ Before you begin, ensure you have the following:
 
 ## ⚙️ Configuration
 
-To use this demo, you need to specify several configuration parameters:
+To use this demo, you need to specify several configuration parameters (no env variables were used in this demo, as Databricks also has to access them):
 
 1. **Databricks Cluster ID**: Find this in your Databricks cluster configurations and update it in the `dagster_demo/__init__.py` file (i.e., replace "<CLUSTER_ID>").
 2. **Databricks Host**: This is the URL of your Databricks workspace. Update it in the `dagster_demo/__init__.py` file (i.e., replace "<HOST_HTTPS_PATH>", sample format: "https://abd-123abcde-0a1b.cloud.databricks.com").
